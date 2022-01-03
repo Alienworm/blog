@@ -1,11 +1,16 @@
 <template>
   <div id="app" class="invisible-scrollbar">
+    <BaseHeader></BaseHeader>
+    <SideBar></SideBar>
   </div>
 </template>
 
 <script>
+  import SideBar from "./components/SideBar";
+  import BaseHeader from "./components/BaseHeader";
   export default {
     name: 'App',
+    components: {BaseHeader, SideBar},
   }
 </script>
 
@@ -16,6 +21,7 @@
     box-sizing: border-box;
     font-family: Helvetica sans-serif;
     letter-spacing: 0.15rem;
+    @include set_text_color('text_color_1');
   }
 
   body {

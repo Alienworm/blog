@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
+import './plugins/fontawesome';
 import { initTheme, switchTheme } from "./utils/theme";
 
 Vue.config.productionTip = false;
