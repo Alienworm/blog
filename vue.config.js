@@ -1,5 +1,5 @@
 module.exports = {
-  outputDir: "/dist",
+  // outputDir: "/dist",
   lintOnSave: true,
   runtimeCompiler: false,
   productionSourceMap: false,
