@@ -1,0 +1,73 @@
+@import "./_global.scss";
+
+@mixin themeify {
+  @each $theme-name, $theme-map in $themes {
+    $theme-map: $theme-map !global;
+    [theme="#{$theme-name}"] & {
+      @content;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin set_background_color($color) {
+  @include themeify {
+    background-color: themed($color) !important;
+  }
+}
+
+@mixin set_text_color($color) {
+  @include themeify {
+    color: themed($color) !important;
+  }
+}
+
+@mixin set_border_color($color) {
+  @include themeify {
+    border-color: themed($color);
+  }
+}
+
+@mixin set_stroke_color($color) {
+  @include themeify {
+    stroke: themed($color);
+  }
+}
+
+@mixin set_fill_color($color) {
+  @include themeify {
+    fill: themed($color);
+  }
+}
+
+@mixin set_box_shadow($type) {
+  @include themeify {
+    @if $type == 'inset' {
+      box-shadow: inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+    @else {
+      box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+}
+
+@mixin set_filter_shadow() {
+  @include themeify {
+    filter: drop-shadow(2.5px 2.5px 5px rgba(0, 0, 0, 0.1));
+  }
+}
+
+@mixin set_bottom_divider() {
+  @include themeify {
+    border-bottom: dashed 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@mixin set_top_divider() {
+  @include themeify {
+    border-top: dashed 2px rgba(0, 0, 0, 0.3);
+  }
+}

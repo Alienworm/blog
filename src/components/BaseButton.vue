@@ -13,16 +13,15 @@ export default {
 
 <style scoped lang="scss">
 button {
-  transition: all 0.2s;
+  transition: all 0.3s;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0 16px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  @include set_box_shadow('inset');
   @include set_background_color("button_color_1");
   &:hover {
     filter: brightness(0.8);

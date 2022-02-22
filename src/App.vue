@@ -1,16 +1,13 @@
 <template>
-  <div id="app" class="invisible-scrollbar">
-    <BaseHeader></BaseHeader>
-    <SideBar></SideBar>
+  <div id="app">
+    <div class="toast-area"></div>
+    <RouterView/>
   </div>
 </template>
 
 <script>
-  import SideBar from "./components/SideBar";
-  import BaseHeader from "./components/BaseHeader";
   export default {
-    name: 'App',
-    components: {BaseHeader, SideBar},
+    name: "App",
   }
 </script>
 
@@ -20,7 +17,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica sans-serif;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
+    transition: background-color .3s;
     @include set_text_color('text_color_1');
   }
 
@@ -31,6 +29,7 @@
     width: 100vw;
     min-height: 100vh;
     @include set_background_color('background_color');
+    transition: all .3s;
   }
 
   .visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
@@ -62,5 +61,16 @@
 
   .mostly-customized-scrollbar::-webkit-scrollbar-corner {
     @include set_background_color('background_color');
+  }
+
+  .toast-area {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
+    pointer-events: none;
   }
 </style>

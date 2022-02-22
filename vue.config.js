@@ -1,5 +1,4 @@
 module.exports = {
-  // outputDir: "/dist",
   lintOnSave: true,
   runtimeCompiler: false,
   productionSourceMap: false,
@@ -8,23 +7,21 @@ module.exports = {
     sourceMap: false,
     loaderOptions: {
       sass: {
-        prependData: `@import "~@/assets/scss/index.scss";`
+        prependData: `@import "~@/assets/scss/_handle.scss";`
       }
     }
   },
-  parallel: require("os").cpus().length > 1,
-  // devServer: {
-  //   hot:true,
-  //   open: true,
-  //   proxy: {
-  //     '/api': {
-  //       target: 'http://127.0.0.1:8090/medical_insurance',
-  //       changeOrigin: true,
-  //       pathRewrite: {
-  //         '^/api': '/'
-  //       }
-  //     }
-  //   },
-  // },
-  pluginOptions: {}
+  devServer: {
+    hot:true,
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:5000/blog',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/'
+        }
+      }
+    },
+  }
 };
