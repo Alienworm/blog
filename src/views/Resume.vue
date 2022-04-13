@@ -45,17 +45,20 @@
             <BaseResumeCard title="获奖经历" title-icon="fa-solid fa-medal">
               <span class="li "><span class="heightlight">个人奖项：</span></span>
               <span class="li ">2018年03月：第二届“强网杯”全国网络安全挑战赛线上赛优秀奖；</span>
-              <span class="li ">2018年04月：蓝桥杯C/C++程序设计大学 B 组三等奖；</span>
-              <span class="li ">2019年11月：2019年全国大学生软件测试大赛福建赛区移动应用测试、开发者测试赛一等奖；</span>
-              <span class="li ">2019年12月：2019年全国大学生软件测试大赛总决赛移动应用测试全国三等奖、开发者测试全国二等奖；</span>
-              <span class="li ">2020年11月：2020年全国大学生软件测试大赛福建赛区移动应用测试个人赛一等奖。</span>
+              <span class="li ">2018年04月：蓝桥杯C/C++程序设计大赛B组三等奖；</span>
+              <span class="li ">2018年11月：厦门理工学院“国科-i春秋”杯第二届网络空间安全大赛二等奖；</span>
+              <span class="li ">2019年11月：全国大学生软件测试大赛福建赛区开发者测试赛一等奖；</span>
+              <span class="li ">2019年11月：全国大学生软件测试大赛福建赛区移动应用测试赛一等奖；</span>
+              <span class="li ">2019年12月：全国大学生软件测试大赛总决赛开发者测试全国二等奖；</span>
+              <span class="li ">2019年12月：全国大学生软件测试大赛总决赛移动应用测试全国三等奖；</span>
+              <span class="li ">2020年11月：全国大学生软件测试大赛福建赛区移动应用测试个人赛一等奖。</span>
               <span class="li "><span class="heightlight">集体奖项：</span></span>
-              <span class="li ">2018年07月：2018年第十一届全国大学生信息安全竞赛创新能力实践赛，全国三等奖；</span>
+              <span class="li ">2018年07月：第十一届全国大学生信息安全竞赛创新能力实践赛，全国三等奖；</span>
               <span class="li ">2018年09月：“网鼎杯”优秀奖；</span>
               <span class="li ">2018年12月：第四届“福建省高校网络空间安全大赛”优秀奖；</span>
               <span class="li ">2019年05月：第十届福建省大学生程序设计竞赛铜奖；</span>
-              <span class="li ">2019年06月：2019年第十二届全国大学生信息安全竞赛创新能力实践赛，赛区二等奖；</span>
-              <span class="li ">2019年09月：福建省2019年国家网络安全宣传周网络空间安全知识和安全技能竞赛（高校组“黑盾杯”赛项），一等奖；</span>
+              <span class="li ">2019年06月：第十二届全国大学生信息安全竞赛创新能力实践赛，赛区二等奖；</span>
+              <span class="li ">2019年09月：福建省国家网络安全宣传周网络空间安全知识和安全技能竞赛一等奖。</span>
             </BaseResumeCard>
           </div>
         </div>
