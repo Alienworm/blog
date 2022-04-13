@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica sans-serif;
+    font-family: Menlo;
     letter-spacing: 0.1rem;
     transition: background-color .3s;
     @include set_text_color('text_color_1');
